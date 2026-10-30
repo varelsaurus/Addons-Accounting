@@ -1,0 +1,22 @@
+# Secrets / local config - never commit
+odoo.conf
+*.conf
+.env
+
+# Database backups and dumps (contain financial data + password hashes)
+*.zip
+*.dump
+*.sql
+*.bak
+filestore/
+
+# Upstream reference clone, not part of this repo
+_src/
+
+# Python / OS / editor
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
