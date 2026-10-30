@@ -53,7 +53,17 @@ Kalau gagal start, cek log di `C:\Program Files\Odoo 19.0.20261017\server\odoo.l
 5. Klik Continue dan tunggu sampai selesai.
 
 ## 7. Login
-Gunakan email dan password akun dari database asli. Kalau modul accounting tidak muncul, aktifkan Developer Mode (`/odoo?debug=1`), buka Apps → Update Apps List, lalu cari "Odoo 19 Accounting Kit".
+Login memakai email dan password dari database asli. Password tidak ada di GitHub, jadi pemilik data harus memberikannya lewat jalur pribadi.
+
+**Untuk pemilik data (sebelum membuat backup):**
+1. Di Odoo Anda buka Settings → Users → New.
+2. Isi nama dan email teman, beri hak akses yang sesuai (misalnya Accounting / Billing atau Administrator), dan set password sementara.
+3. Buat backup ulang di `/web/database/manager` supaya user baru itu ikut di file zip.
+4. Kirim email, password sementara dan file zip lewat chat atau Drive pribadi.
+
+**Untuk teman:** login dengan email dan password sementara tadi, lalu ganti password lewat menu profil (kanan atas → Preferences → Account Security).
+
+Kalau modul accounting tidak muncul, aktifkan Developer Mode (`/odoo?debug=1`), buka Apps → Update Apps List, lalu cari "Odoo 19 Accounting Kit".
 
 ## Catatan
 - Setiap laptop punya database sendiri. Perubahan data **tidak** otomatis sinkron.
